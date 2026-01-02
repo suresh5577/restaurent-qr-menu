@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu QR Code</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body style="text-align:center; font-family:Arial; padding:40px;">
+  <h1>📱 Scan for Menu</h1>
+  <div id="qrcode"></div>
+  <p>Scan this QR to view the menu</p>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+  <script>
+    new QRCode(document.getElementById("qrcode"), {
+      text: window.location.origin,
+      width: 250,
+      height: 250
+    });
+  </script>
+</body>
+</html>

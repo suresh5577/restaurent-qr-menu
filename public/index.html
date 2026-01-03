@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -8,8 +8,6 @@
 </head>
 <body>
 <header>
-  <!-- <h1>🍽️ Warm Light Kitchen</h1>
-  <p>Scan • View Menu • Enjoy</p> -->
   <img src="logo.png" alt="Warm Light Kitchen Logo" />
 </header>
 
@@ -39,5 +37,179 @@
 <footer>
   <p>Thank you for dining with us ❤️</p>
 </footer>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warm Light Kitchen Menu</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fafafa;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 16px;
+  background: #fff;
+}
+
+header img {
+  max-width: 180px;
+}
+
+.menu {
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.section {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+  font-size: 16px;
+  margin: 0 0 8px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
+  color: #333;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 4px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.price {
+  font-weight: 600;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Small phones */
+@media (max-width: 360px) {
+  .menu {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+  color: #666;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" alt="Warm Light Kitchen Logo" />
+</header>
+
+<section class="menu">
+
+<!-- SOUPS -->
+<div class="section">
+  <h2>Soups</h2>
+  <div class="item"><span>Sweet Corn Soup</span><span class="price">49</span></div>
+  <div class="item"><span>Veg Manchow Soup</span><span class="price">49</span></div>
+  <div class="item"><span>Lemon Coriander Soup</span><span class="price">49</span></div>
+  <div class="item"><span>Chicken Manchow Soup</span><span class="price">69</span></div>
+  <div class="item"><span>Chicken Sweet Corn Soup</span><span class="price">59</span></div>
+  <div class="item"><span>Chicken Hot & Sour Soup</span><span class="price">59</span></div>
+  <div class="item"><span>Chicken Coriander Soup</span><span class="price">59</span></div>
+</div>
+
+<!-- VEG STARTERS -->
+<div class="section">
+  <h2>Veg Starters</h2>
+  <div class="item"><span>Crispy Corn</span><span class="price">79</span></div>
+  <div class="item"><span>Baby Corn 65</span><span class="price">119</span></div>
+  <div class="item"><span>Chilli Baby Corn</span><span class="price">119</span></div>
+  <div class="item"><span>Veg Manchurian (Wet)</span><span class="price">129</span></div>
+  <div class="item"><span>Veg Manchurian (Dry)</span><span class="price">129</span></div>
+  <div class="item"><span>Paneer 65</span><span class="price">149</span></div>
+  <div class="item"><span>Chilli Paneer</span><span class="price">149</span></div>
+  <div class="item"><span>Paneer Majestic</span><span class="price">169</span></div>
+</div>
+
+<!-- NON-VEG STARTERS -->
+<div class="section">
+  <h2>Non-Veg Starters</h2>
+  <div class="item"><span>Egg Chilli</span><span class="price">129</span></div>
+  <div class="item"><span>Egg Manchurian</span><span class="price">129</span></div>
+  <div class="item"><span>Egg 65</span><span class="price">129</span></div>
+  <div class="item"><span>Chicken 65</span><span class="price">149</span></div>
+  <div class="item"><span>Chicken Pakodi</span><span class="price">149</span></div>
+  <div class="item"><span>Chicken Lollipop</span><span class="price">159</span></div>
+  <div class="item"><span>Garlic Chicken</span><span class="price">159</span></div>
+  <div class="item"><span>Chilli Chicken</span><span class="price">159</span></div>
+</div>
+
+<!-- NOODLES -->
+<div class="section">
+  <h2>Veg Noodles</h2>
+  <div class="item"><span>Veg Noodles</span><span class="price">69</span></div>
+  <div class="item"><span>Veg Soft Noodles</span><span class="price">69</span></div>
+  <div class="item"><span>Veg Schezwan Noodles</span><span class="price">69</span></div>
+</div>
+
+<div class="section">
+  <h2>Non-Veg Noodles</h2>
+  <div class="item"><span>Egg Noodles</span><span class="price">89</span></div>
+  <div class="item"><span>Egg Soft Noodles</span><span class="price">89</span></div>
+  <div class="item"><span>Chicken Noodles</span><span class="price">99</span></div>
+  <div class="item"><span>Chicken Schezwan Noodles</span><span class="price">99</span></div>
+</div>
+
+<!-- BIRYANI -->
+<div class="section">
+  <h2>Veg Biryani</h2>
+  <div class="item"><span>Veg Biryani</span><span class="price">129</span></div>
+  <div class="item"><span>Paneer Biryani</span><span class="price">149</span></div>
+  <div class="item"><span>Mushroom Biryani</span><span class="price">149</span></div>
+  <div class="item"><span>Kaju Paneer Biryani</span><span class="price">159</span></div>
+</div>
+
+<div class="section">
+  <h2>Non-Veg Biryani</h2>
+  <div class="item"><span>Chicken Dum Biryani</span><span class="price">149</span></div>
+  <div class="item"><span>Chicken Fry Biryani</span><span class="price">159</span></div>
+  <div class="item"><span>Mutton Biryani</span><span class="price">199</span></div>
+</div>
+
+</section>
+
+<footer>
+  Thank you for dining with us ❤️
+</footer>
+
 </body>
 </html>
